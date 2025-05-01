@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambourine Frontend developer Test
+    </title>
+</head>
+<link rel="stylesheet" href="styles.css">
+
+<body class="page">
+
+    <section class="section--amenities" aria-labelledby="amenities-title">
+        <div class="amenities__content">
+            <h2 class="amenities__subtitle">Amenities For</h2>
+            <div class="amenities__title-container">
+                <div class="amenities__line"></div>
+                <h1 class="amenities__title" id="amenities-title">Weddings</h1>
+                <div class="amenities__line"></div>
+            </div>
+        
+            <div class="amenities-wrapper">
+                <ul class="amenities__list">
+                    <li class="amenities__item">On-Site Activities and Events</li>
+                    <li class="amenities__item">Complimentary Tasting for Four Guests</li>
+                    <li class="amenities__item">Complimentary Parquet Dance Floor</li>
+    
+                    <li class="amenities__item">Hotel Recommended Vendor List</li>
+                    <li class="amenities__item">Complimentary Suite for Wedding Couple</li>
+                    <li class="amenities__item">On-Site Audio-Visual Partner</li>
+    
+                    <li class="amenities__item">Butler-Passed Hors d’oeuvres</li>
+                    <li class="amenities__item">Courtesy Guestroom Block</li>
+                    <li class="amenities__item">On-Site Audio-Visual Partner</li>
+                </ul>
+            </div>
+            <div class="amenities__line"></div>
+        </div>
+    </section>
+
+    <section class="section--carousel" aria-labelledby="location-title">
+            <div class="carousel__background" id="background"></div>
+        
+            <div class="carousel__content">
+                <div class="carousel__text">
+                    <p class="section__subtitle carousel__subheadline" id="subheadline"></p>
+                    <h2 class="carousel__title" id="title"></h2>
+                    <p class="section__description carousel__description" id="description"></p>
+                    <div class="carousel__nav">
+                        <button id="prev" class="carousel__arrow">
+                            <svg class="arrow-icon left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 10" fill="none">
+                                <path d="M0 5h29M29 5l-4-4m4 4l-4 4"/>
+                            </svg>
+                        </button>
+                        <button id="next" class="carousel__arrow">
+                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 10" fill="none">
+                                <path d="M0 5h29M29 5l-4-4m4 4l-4 4"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        
+                <div class="carousel__image-container">
+                    <img id="main-image" class="carousel__image" src="images/image1.jpg" alt="Slide Image" />
+                    <div id="slide-number" class="carousel__number">01</div>
+                </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="section--menu" aria-labelledby="menus-title">
+        <div class="menu__content">
+            <div class="menu__image menu__image--cheers" role="img" aria-label="People cheering with wine glasses"></div>
+            <div class="section__text">
+                <p class="section__subtitle">Subheadline</p>
+                <h2 class="section__title" id="menus-title">Menus Made<br>-To-Order</h2>
+                <p class="section__description--menu">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus, nibh a luctus lacinia, ligula dolor luctus nibh, a elementum metus nunc a quam. Pellentesque mattis libero sit amet ligula placerat fermentum. Ut aliquet aliquam velit et rhoncus.
+                </p>
+                <a href="#" class="section__button">View Menus</a>
+            </div>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>

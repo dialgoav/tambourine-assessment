@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Source+Sans+3:wght@400;600&family=Montserrat:wght@400;700&display=swap');
+
+/* Css Reset */
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+  *, *::before, *::after { 
+    box-sizing: border-box; 
+}
+
+body { 
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+input, button, textarea, select { 
+    font: inherit; 
+}
+
+p { 
+    text-wrap: pretty; 
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    text-wrap: balance;
+}
+
+img, video, svg { 
+    height: auto; max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce)  {
+    *, *::before, *::after { 
+        animation-duration: 0.01ms !important; 
+        animation-iteration-count: 1 !important; 
+        transition-duration: 0.01ms !important; 
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+    }
+}
+  /* End Css Reset */
+
+:root {
+    --white: #fff;
+    --light-green: #98A684;
+    --black: #1B1B1B;
+    --grey: #3C3C3C;
+    --font-serif: 'Cardo', serif;
+    --font-sans: 'Source Sans 3', sans-serif;
+    --font-alt: 'Montserrat', sans-serif;
+}
+
+body.page {
+    font-family: var(--font-sans);
+    background: var(--white);
+    color: var(--black);
+}
+
+.section--amenities {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amenities__content {
+    width: 1170px;
+}
+
+.amenities__subtitle {
+    font-family: var(--font-alt);
+    color: var(--light-green);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+}
+
+.amenities__title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.amenities__line {
+    border-top: 1px solid var(--light-green);
+    flex: 1;
+}
+
+.amenities__title {
+    font-family: var(--font-serif);
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -1.29px;
+    margin: 0;
+}
+
+.amenities-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.amenities__list {
+    font-size: 20px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 310px 376px 325px;
+    gap: 0.5rem 4rem; 
+    padding: 0;
+    margin: 0;
+}
+
+.amenities__item {
+    margin: 0.25rem 0;
+}
+
+.amenities__item::marker {
+    color: var(--light-green);
+}
+
+.section--carousel{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1) brightness(0.5);
+    z-index: 0;
+    transition: background-image 0.6s ease-in-out;
+}
+
+.carousel__content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    z-index: 1;
+    width: 1170px;
+    height: 604px;
+}
+
+.carousel__text {
+    flex: 1;
+    background-color: white;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__subheadline {
+    margin-bottom: 10px;
+}
+
+.carousel__title {
+    margin-bottom: 20px;
+    line-height: 1.1;
+    max-width: 226px;
+    font-family: var(--font-serif);
+    font-weight: 300;
+    color: var(--grey);
+    font-size: 60px;
+}
+
+.carousel__description {
+    line-height: 1.4;
+    max-width: 359px;
+    margin-bottom: 40px;
+}
+
+.carousel__nav {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    bottom: 54px;
+    left: 379px;
+}
+
+.carousel__arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    width: 53px;
+    height: auto;
+    transition: transform 0.3s;
+    stroke: var(--black);
+}
+
+.arrow-icon.left {
+    transform: rotate(180deg);
+}
+
+.arrow-icon:hover {
+    stroke: var(--light-green);
+}
+
+.carousel__image-container {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel__number {
+    position: absolute;
+    bottom: -4.5rem;
+    right: -2.5rem;
+    font-size: 200px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: var(--white);
+    z-index: 1;
+    font-family: var(--font-serif);
+    letter-spacing: -4.29px;
+}
+
+
+.section--menu {
+    padding-left: 240px;
+    padding-right: 476px;
+}
+
+.menu__content{
+    gap: 105px;
+    display: flex;
+    
+    align-items: center;
+}
+
+.section__text {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--white);
+}
+
+.section__subtitle {
+    color: var(--light-green);
+    font-family: var(--font-alt);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+}
+
+.section__title {
+    font-family: var(--font-serif);
+    font-size: 60px;
+    font-weight: 300;
+    color: var(--grey);
+}
+
+.section__description {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.section__description--carousel{
+    width: 359px;
+}
+
+.section__description--menu{
+    width: 379px;
+}
+
+.section__button {
+    display: inline-block;
+    background: var(--light-green);
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 2.1px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px 54px;
+}
+
+.menu__image {
+    flex: 1;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu__image--cheers {
+    background-image: url('images/people-cheering-with-wine-glasses.jpg');
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .amenities__list {
+        grid-template-columns: 1fr; 
+    }
+
+    .carousel__content{
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 900px) {
+    .carousel__content {
+        flex-direction: column;
+    }
+}
