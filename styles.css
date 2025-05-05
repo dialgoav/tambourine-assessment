@@ -92,6 +92,25 @@ body.page {
 .amenities__line {
     border-top: 1px solid var(--light-green);
     flex: 1;
+    width: 100%;
+}
+
+.line--left {
+    transform: scaleX(0);  
+    transform-origin: right; 
+    animation: scaleIn 1s ease-out forwards;
+}
+
+.line--right {
+    transform: scaleX(0);  
+    transform-origin: left; 
+    animation: scaleIn 1s ease-out forwards;
+}
+
+@keyframes scaleIn {
+to {
+    transform: scaleX(1); 
+}
 }
 
 .amenities__title {
@@ -186,9 +205,9 @@ body.page {
 }
 
 .carousel__description {
-  line-height: 1.4;
-  max-width: 359px;
-  margin-bottom: 40px;
+    line-height: 1.4;
+    max-width: 359px;
+    margin-bottom: 40px;
 }
 
 .carousel__nav {
@@ -201,24 +220,39 @@ body.page {
 }
 
 .carousel__arrow {
-  background: transparent;
-  border: none;
-  cursor: pointer;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .arrow-icon {
-  width: 53px;
-  height: auto;
-  transition: transform 0.3s;
-  stroke: var(--black);
+    width: 58px;
+    height: auto;
+    stroke: var(--black);
+    fill: none;
+    transform: scaleX(0);
+    transition: transform 0.8s ease-out;
+}
+
+.arrow-icon.right {
+    transform-origin: left;
 }
 
 .arrow-icon.left {
-  transform: rotate(180deg);
+    transform-origin: left;
+    transform: rotate(180deg) scaleX(0);
+}
+
+.arrow-icon.active.right {
+    transform: scaleX(1);
+}
+
+.arrow-icon.active.left {
+    transform: rotate(180deg) scaleX(1);
 }
 
 .arrow-icon:hover {
-  stroke: var(--light-green);
+    stroke: var(--light-green);
 }
 
 .carousel__image-container {

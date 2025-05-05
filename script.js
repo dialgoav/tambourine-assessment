@@ -55,3 +55,23 @@ const description = document.getElementById('description');
   });
 
   updateSlide(currentSlide);
+
+  
+  //ARROW ANIMATION
+  document.addEventListener('DOMContentLoaded', () => {
+    const arrows = document.querySelectorAll('.arrow-icon');
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    arrows.forEach(arrow => observer.observe(arrow));
+  });
+  
