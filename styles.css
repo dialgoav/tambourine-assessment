@@ -60,7 +60,6 @@ body.page {
 .section{
     max-height: 800px;
 }
-
 .section--amenities {
     text-align: center;
     padding: 132px 0px 86px 0px;
@@ -68,11 +67,9 @@ body.page {
     justify-content: center;
     align-items: center;
 }
-
 .amenities__content {
     max-width: 1170px;
 }
-
 .amenities__subtitle {
     font-family: var(--font-alt);
     color: var(--light-green);
@@ -80,7 +77,6 @@ body.page {
     font-size: 14px;
     letter-spacing: 0.35px;
 }
-
 .amenities__title-container {
     display: flex;
     align-items: center;
@@ -88,31 +84,26 @@ body.page {
     gap: 1rem;
     margin: 1rem 0;
 }
-
 .amenities__line {
     border-top: 1px solid var(--light-green);
     flex: 1;
     width: 100%;
 }
-
 .line--left {
     transform: scaleX(0);  
     transform-origin: right; 
     animation: scaleIn 1s ease-out forwards;
 }
-
 .line--right {
     transform: scaleX(0);  
     transform-origin: left; 
     animation: scaleIn 1s ease-out forwards;
 }
-
 @keyframes scaleIn {
 to {
     transform: scaleX(1); 
 }
 }
-
 .amenities__title {
     font-family: var(--font-serif);
     font-size: 60px;
@@ -120,7 +111,6 @@ to {
     letter-spacing: -1.29px;
     margin: 0;
 }
-
 .amenities-wrapper {
     width: 100%;
     margin: 0 auto;
@@ -130,7 +120,6 @@ to {
     justify-content: center;
     align-items: center;
 }
-
 .amenities__list {
     font-size: 20px;
     text-align: left;
@@ -140,15 +129,12 @@ to {
     padding: 0;
     margin: 0;
 }
-
 .amenities__item {
     margin: 0.25rem 0;
 }
-
 .amenities__item::marker {
     color: var(--light-green);
 }
-
 .section--carousel {
     position: relative;
     width: 100%;
@@ -158,7 +144,6 @@ to {
     justify-content: center;
     align-items: center;
 }
-
 .carousel__background {
     position: absolute;
     width: 100%;
@@ -169,7 +154,6 @@ to {
     z-index: 0;
     transition: background-image 0.6s ease-in-out;
 }
-
 .carousel__content {
     position: relative; 
     display: flex;
@@ -179,9 +163,8 @@ to {
     width: 1170px;
     height: 604px;
 }
-
 .carousel__text {
-    background-color: white;
+    background-color: var(--white);
     padding-left: 100px;
     display: flex;
     flex-direction: column;
@@ -189,11 +172,9 @@ to {
     width: 50%;
     height: 100%;
 }
-
 .carousel__subheadline {
     margin-bottom: 10px;
 }
-
 .carousel__title {
     margin-bottom: 20px;
     line-height: 1.1;
@@ -203,13 +184,11 @@ to {
     color: var(--grey);
     font-size: 60px;
 }
-
 .carousel__description {
     line-height: 1.4;
     max-width: 359px;
     margin-bottom: 40px;
 }
-
 .carousel__nav {
     position: absolute;
     display: flex;
@@ -218,13 +197,11 @@ to {
     bottom: 54px;
     left: 379px;
 }
-
 .carousel__arrow {
     background: transparent;
     border: none;
     cursor: pointer;
 }
-
 .arrow-icon {
     width: 58px;
     height: auto;
@@ -233,41 +210,33 @@ to {
     transform: scaleX(0);
     transition: transform 0.8s ease-out;
 }
-
 .arrow-icon.right {
     transform-origin: left;
 }
-
 .arrow-icon.left {
     transform-origin: left;
     transform: rotate(180deg) scaleX(0);
 }
-
 .arrow-icon.active.right {
     transform: scaleX(1);
 }
-
 .arrow-icon.active.left {
     transform: rotate(180deg) scaleX(1);
 }
-
 .arrow-icon:hover {
     stroke: var(--light-green);
 }
-
 .carousel__image-container {
     position: relative;
     width: 50%;
     height: 100%;
 }
-
 .carousel__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
 }
-
 .carousel__number {
     position: absolute;
     bottom: -4.5rem;
@@ -280,13 +249,11 @@ to {
     font-family: var(--font-serif);
     letter-spacing: -4.29px;
 }
-
 .section--menu {
     width: 100%;
     justify-content: center;
     align-items: center;
 }
-
 .menu__content {
     max-width: 1440;
     height: 100%;
@@ -295,7 +262,6 @@ to {
     align-items: center;
     justify-content: center;
 }
-
 .menu__image {
     width: 50%;
     height: auto;
@@ -303,7 +269,6 @@ to {
     align-items: center;
     padding-left: 200px;
 }
-
 .section__text {
     width: 50%;
     padding: 105px;
@@ -312,7 +277,6 @@ to {
     flex-direction: column;
     gap: 20px;
 }
-
 .section__subtitle {
     color: var(--light-green);
     font-family: var(--font-alt);
@@ -320,7 +284,6 @@ to {
     font-size: 14px;
     letter-spacing: 0.35px;
 }
-
 .section__title {
     max-width: 350px;
     font-family: var(--font-serif);
@@ -328,19 +291,16 @@ to {
     font-weight: 300;
     color: var(--grey);
 }
-
 .section__description--menu {
     font-size: 16px;
     margin-bottom: 1rem;
     max-width: 379px;
 }
-
 .section__description--carousel {
     font-size: 16px;
     margin-bottom: 1rem;
     max-width: 359px;
 }
-
 .section__button {
     display: inline-block;
     background: var(--light-green);
@@ -353,12 +313,10 @@ to {
     max-width: 223px;
     text-align: center;
 }
-
 .section__button:hover{
     background: var(--grey);
     color: var(--white);  
 }
-
 @media (max-width: 1500px) {
     .menu__image {
         padding-left: 100px;
@@ -369,125 +327,100 @@ to {
         grid-template-columns: auto auto;
         gap: 2rem;
     }
-
     .section--menu {
         padding: 2rem;
     }
-
     .menu__content {
         flex-direction: column;
     }
-
     .menu__image {
         width: 100%;
         padding-left: 0px;
     }
-
     .section__text {
         padding: 50px;
         width: 100%;
         align-items: center;
     }
-
     
     .section__title, .section__description--menu{
         max-width: 100%;
     }
-
     .section__title{
         text-align: center;
     }
-
     .carousel__nav {
         position: static;
         margin-top: 1rem;
         justify-content: center;
     }
 }
-
 @media (max-width: 900px) {
     .section{
         padding: 2rem;
     }
-
     .carousel__content {
         flex-direction: column;
         height: auto;
         width: 100%;
         padding: 2rem 1rem;
     }
-
     .carousel__image-container{
         width: 100%; 
     }
-
     .carousel__text {
         padding: 100px;
         text-align: center;
         width: 100%;
     }
-
     .carousel__title {
-      font-size: 40px;
-      max-width: 100%;
+        font-size: 40px;
+        max-width: 100%;
     }
-  
     .carousel__description {
-      max-width: 100%;
+        max-width: 100%;
     }
-
     .arrow-icon {
         width: 40px;
     }  
 }
-
 @media (max-width: 768px) {
-
     .section{
         padding: 1rem;
     }
-
     .section--amenities {
-      flex-direction: column;
-      padding: 1rem;
+        flex-direction: column;
+        padding: 1rem;
     }
-  
     .amenities__content {
-      width: 100%;
+        width: 100%;
     }
-  
     .amenities__list {
         grid-template-columns: 1fr;
         gap: 2rem;
         font-size: 18px;
     }
-  
     .amenities__title {
-      font-size: 40px;
+        font-size: 40px;
     }
-  
     .amenities__title-container {
-      flex-direction: column;
+        flex-direction: column;
     }
-
     .section--menu {
-      padding: 1rem;
+        padding: 1rem;
     }
-
     .section__title {
         font-size: 40px;
         max-width: 350px;
     }
-
     .section__description--menu {
         max-width: 379px;
     }    
-
     .menu__image {
-      width: 100%;
-      height: auto;
+        width: 100%;
+        height: auto;
     }
-  }
+}
 
 
 
